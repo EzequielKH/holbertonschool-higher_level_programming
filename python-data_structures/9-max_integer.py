@@ -5,4 +5,3 @@ def max_integer(my_list=[]):
         if number > largest:
             largest = number
             return largest
-            
