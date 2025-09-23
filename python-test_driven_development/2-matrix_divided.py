@@ -1,25 +1,39 @@
 #!/usr/bin/python3
 def matrix_divided(matrix, div):
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
+
+    """
+    This module provides a function to divide all elements of a matrix.
+    """
+
+def matrix_divided(matrix, div):
+    """
+    Divides all elements of a matrix by a number.
+
+    Args:
+        matrix: list of lists of integers/floats.
+        div: number (int or float).
+
+    Returns:
+        A new matrix with elements divided by div,
+        rounded to 2 decimal places.
+
+    Raises:
+        TypeError: if matrix is not a list of lists of numbers,
+                   or if rows are not the same size,
+                   or if div is not a number.
+        ZeroDivisionError: if div is 0.
+    """
+    if (not isinstance(matrix, list) or
+            not all(isinstance(row, list) for row in matrix) or
+            not all(isinstance(num, (int, float)) for row in matrix for num in row)):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-    if not all(isinstance(element, (int, float)) for row in matrix for element in row):
+
+    if matrix and not all(len(row) == len(matrix[0]) for row in matrix):
         raise TypeError("Each row of the matrix must have the same size")
 
-    if not matrix:
-        return []
-
-    row_size = len(matrix[0])
-    if not all(len(row) == row_size for now in matrix):
-        raise TypeError("")
     if not isinstance(div, (int, float)):
-        raise TypeError("")
-
+        raise TypeError("div must be a number")
     if div == 0:
-        raise ZeroDivisionError("")
+        raise ZeroDivisionError("division by zero")
 
-    new_matrix = []
-    for row in matrix:
-        new_row = [round(element / div, 2) for element in row]
-        new_matrix.append(new_row)
-
-    return new_matrix
+    return [[round(num / div, 2) for num in row] for row in matrix]

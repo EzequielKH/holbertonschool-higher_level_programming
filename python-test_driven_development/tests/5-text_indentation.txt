@@ -1,0 +1,33 @@
+>>> text_indentation("Hello world. How are you?")
+Hello world.
+
+How are you?
+
+>>> text_indentation("Wait: are you sure?")
+Wait:
+
+are you sure?
+
+>>> text_indentation("No separators here")
+No separators here
+
+>>> text_indentation("Multiple...dots")
+Multiple.
+
+.
+
+.
+
+dots
+
+>>> text_indentation("Spaces before and after ?  ")
+Spaces before and after ?
+
+>>> text_indentation("")
+>>> text_indentation("  Leading and trailing spaces.  ")
+Leading and trailing spaces.
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
