@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""Define a class Square with size, area, and printing capabilities."""
+"""Define a class Square with size, area,
+and printing capabilities."""
 
 
 class Square:
-    """Represents a square with private size, area computation, and printing."""
+    """Represents a square with private size, 
+    area computation, and printing."""
 
     def __init__(self, size=0):
         """Initialize the square with a given size.
@@ -15,7 +17,7 @@ class Square:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
         """
-        self.size = size  # Use setter for validation
+        self.size = size
 
     @property
     def size(self):

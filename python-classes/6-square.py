@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Define a class Square with size, position, area, and printing capabilities."""
+"""
+Define a class Square with size, position,
+area, and printing capabilities.
+"""
 
 
 class Square:
@@ -10,7 +13,8 @@ class Square:
 
         Args:
             size (int, optional): The size of the square. Defaults to 0.
-            position (tuple, optional): The (x, y) position offsets. Defaults to (0, 0).
+            position (tuple, optional): The (x, y) position offsets.
+            Defaults to (0, 0).
 
         Raises:
             TypeError: If size is not an integer or position is invalid.
@@ -65,10 +69,8 @@ class Square:
             print()
             return
 
-        # Print vertical offset
         for _ in range(self.__position[1]):
             print()
 
-        # Print each square line with horizontal offset
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)

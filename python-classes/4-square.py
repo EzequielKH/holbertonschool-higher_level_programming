@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Define a class Square with a private size, getter/setter, and area method."""
+"""
+Define a class Square with a private size,
+getter/setter, and area method.
+"""
 
 
 class Square:
@@ -15,7 +18,7 @@ class Square:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
         """
-        self.size = size  # Use the setter for validation
+        self.size = size
 
     @property
     def size(self):
