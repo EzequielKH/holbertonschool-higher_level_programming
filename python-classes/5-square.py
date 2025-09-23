@@ -4,7 +4,7 @@ and printing capabilities."""
 
 
 class Square:
-    """Represents a square with private size, 
+    """Represents a square with private size,
     area computation, and printing."""
 
     def __init__(self, size=0):
