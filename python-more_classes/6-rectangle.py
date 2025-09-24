@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Defines the Rectangle class with width, height, and instance management."""
 
 
 class Rectangle:

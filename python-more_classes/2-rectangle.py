@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class."""
+"""This module defines a Rectangle class."""
 
 
 class Rectangle:
-    """Represents a rectangle with width and height."""
+    """Represents a rectangle."""
 
     def __init__(self, width=0, height=0):
-        self.width = width  # Calls setter
-        self.height = height  # Calls setter
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -36,3 +36,8 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        """Return rectangle area."""
+        return self.__width * self.__height
+s
