@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""Module that defines a function to add two integers.
-This module provides a function that takes two arguments
-and returns their integer sum.
-"""
+"""Module that defines a function to add two integers."""
 
 
 def add_integer(a, b=98):
