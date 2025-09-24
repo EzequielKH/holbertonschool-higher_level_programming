@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Module that defines a function to add two integers."""
 
-
+    
 def add_integer(a, b=98):
     """Return the addition of two integers.
 
@@ -21,4 +21,3 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
 
     return int(a) + int(b)
-    
