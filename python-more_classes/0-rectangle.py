@@ -2,6 +2,6 @@
 """This module defines an empty Rectangle class."""
 
 
-class rectangle:
+class Rectangle:
     """Represents a rectangle."""
     pass
