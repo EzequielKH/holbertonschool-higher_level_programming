@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 """Defines a base geometry class with tests."""
+import unittest
 
 
 class BaseGeometry:
     """Base class for geometry."""
-
     def area(self):
         """Raise an exception because area() is not implemented."""
         raise Exception("area() is not implemented")
-
     def integer_validator(self, name, value):
         """
         Validate that value is a positive integer.
@@ -25,10 +24,6 @@ class BaseGeometry:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
-
-
-import unittest
-
 
 class TestBaseGeometry(unittest.TestCase):
     """Unit tests for the BaseGeometry class."""
@@ -49,7 +44,10 @@ class TestBaseGeometry(unittest.TestCase):
             self.bg.integer_validator("width", 10)
             self.bg.integer_validator("height", 5)
         except Exception as e:
-            self.fail(f"integer_validator raised {type(e).__name__} unexpectedly!")
+            self.fail(
+                f"integer_validator raised {type(e).__name__} unexpectedly!"
+            )
+
 
     def test_integer_validator_not_integer(self):
         """integer_validator should raise TypeError for non-integers."""
