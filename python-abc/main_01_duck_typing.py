@@ -1,32 +1,8 @@
-#!/usr/bin/python3
-""" """
+#!/usr/bin/env python3
+from task_01_duck_typing import Circle, Rectangle, shape_info
 
+circle = Circle(radius=5)
+rectangle = Rectangle(width=4, height=7)
 
-
-from abc import ABC, abstractmethod
-
-class Animal(ABC):
-    @abstractmethod
-    def __init__(self, sound):
-        self.sound = sound
-        def sonar(self):
-
-    pass
-class Dog(animal):
-    def __init__(self, sound):
-        self.sound = sound
-        def sonar2(self):
-    pass
-
-class Cat(animal):
-    def __init__(self, sound):
-        self.sound = sound
-        def sonar3(self):
-
-dog = Dog()
-cat = Cat()
-animal = Animal()
-print(f"The dog says: {dog.sound()}")
-print(f"The cat says: {cat.sound()}")
-print(f"The generic animal says: {animal.sound()}")
-    pass
+shape_info(circle)
+shape_info(rectangle)
