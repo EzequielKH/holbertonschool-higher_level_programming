@@ -1,23 +1,11 @@
 #!/usr/bin/env python3
+from task_00_abc import Animal, Dog, Cat
 
+bobby = Dog()
+garfield = Cat()
 
-from abc import ABC, abstractmethod
+print(bobby.sound())
+print(garfield.sound())
 
-class Animal(ABC):
-
-    @abstractmethod
-    def sound(self):
-        pass
-
-
-class Dog(Animal):
-
-
-    def sound(self):
-        return "Woof"
-
-
-class Cat(Animal):
-
-    def sound(self):
-        return "Meow"
+animal = Animal()
+print(animal.sound())
