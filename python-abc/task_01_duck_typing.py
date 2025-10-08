@@ -27,12 +27,10 @@ class Circle(Shape):
     def perimeter(self):
         return 2 * math.pi * self.radius
 
-
 class Rectangle(Shape):
-
     def __init__(self, width, height):
-        self.width = abs(width)
-        self.height = abs(height)
+        self.width = width
+        self.height = height
 
     def area(self):
         return self.width * self.height
