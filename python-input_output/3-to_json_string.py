@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-Module that defines a function to convert an object to a JSON string.
+Module 3-to_json_string
+This module contains a function `to_json_string` that returns
+the JSON representation of a Python object (string).
 """
-
 
 import json
 
