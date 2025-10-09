@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Module that defines a function for serializing an object to a JSON-compatible dictionary.
+Module that defines a function for serializing
+an object to a JSON-compatible dictionary.
 """
 
 
@@ -14,7 +15,8 @@ def class_to_json(obj):
         obj (object): Instance of a class.
 
     Returns:
-        dict: A dictionary containing the serializable attributes of the object.
+        dict: A dictionary containing the serializable attributes
+        of the object.
     """
     json_dict = {}
     for key, value in obj.__dict__.items():

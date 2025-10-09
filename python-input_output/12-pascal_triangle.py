@@ -3,7 +3,9 @@
 Module that defines a function to generate Pascal's Triangle.
 """
 
+
 def pascal_triangle(n):
+
     """
     Generate Pascal's Triangle of size `n`.
 

@@ -3,7 +3,9 @@
 Module that defines a Student class.
 """
 
+
 class Student:
+
     """
     A class that represents a student.
     Attributes:

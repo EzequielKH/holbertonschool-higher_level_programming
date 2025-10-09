@@ -4,7 +4,9 @@ Module that defines a Student class with JSON serialization
 and deserialization capabilities.
 """
 
+
 class Student:
+
     """
     Represents a student with first name, last name, and age.
 

@@ -3,7 +3,9 @@
 Module that defines a Student class with JSON serialization.
 """
 
+
 class Student:
+
     """
     A class that represents a student.
 
@@ -37,7 +39,8 @@ class Student:
             attrs (list, optional): List of attribute names to include.
 
         Returns:
-            dict: A dictionary containing the requested attributes of the student.
+            dict: A dictionary containing the
+            requested attributes of the student.
         """
         if attrs is None:
             return self.__dict__.copy()

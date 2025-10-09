@@ -14,9 +14,11 @@ def read_file(filename=""):
         filename (str): The path to the text file to read.
 
     Description:
-        - Opens the file using a 'with' statement to ensure it is properly closed.
+        - Opens the file using a 'with' statement to ensure
+        it is properly closed.
         - Reads the entire content of the file.
-        - Prints the content directly to standard output without adding extra newlines.
+        - Prints the content directly to standard output
+        without adding extra newlines.
     """
     with open(filename, mode='r', encoding='utf-8') as f:
         print(f.read(), end='')
