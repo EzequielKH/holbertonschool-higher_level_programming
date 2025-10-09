@@ -1,7 +1,22 @@
 #!/usr/bin/python3
-
+"""
+Module that defines a function to generate Pascal's Triangle.
+"""
 
 def pascal_triangle(n):
+    """
+    Generate Pascal's Triangle of size `n`.
+
+    Each element in the triangle is the sum of the two elements
+    above it. The triangle is represented as a list of lists of integers.
+
+    Args:
+        n (int): The number of rows of the triangle.
+
+    Returns:
+        list: A list of lists representing Pascal's Triangle.
+              Returns an empty list if n <= 0.
+    """
     if n <= 0:
         return []
 
